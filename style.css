@@ -1,0 +1,396 @@
+body{
+    background: #000;
+   
+    margin:0;
+    padding: 0;
+
+}
+.header{
+    max-width: 100%;
+    height: 99vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/backgrd.webp' ) ;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+   
+    position: relative;
+    box-shadow:10px 10px;
+    
+
+
+    
+
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    max-height: fit-content;
+   margin-right: 100px;
+  
+}
+nav button {
+    background-color: red;
+    border: 0;
+        outline:0;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 5px;
+        height:36px;
+        cursor: pointer;
+        padding: 7px 20px;
+      
+      
+
+}
+.eng select{
+        background-color: transparent;
+        border: 1px solid white;
+        outline:0;
+        color: #fff;
+        font-size: 15px;
+     
+        
+        cursor: pointer;
+        padding: 7px 20px;
+      
+        border-radius: 5px;
+       
+    
+    }
+    
+
+
+.eng option{
+    color:#000;
+}
+.left{
+  align-items: center;
+    padding-right: 80px;
+    
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+.content{
+
+    color: #fff;
+    margin-top: 100px;
+    justify-items: center;
+    
+  
+}
+.email-si {
+   
+    border-radius: 4px;
+    display:flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow:hidden;
+    
+   
+
+    
+
+
+
+}
+ .content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width:650px;
+    position: relative;
+    margin-left: 100px;
+
+
+}
+.content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.email-si input{
+    flex:1;
+    border:1px solid rgb(119, 107, 107);
+    outline:0;   
+    margin-left: 20px;
+    width:400px;
+    background-color: transparent;
+    height: 45px;
+    position:relative;
+    right:10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: white;
+  
+
+}
+.email-si button{
+  
+    background-color: red;
+    border: 0;
+    outline:0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    position: relative;
+    right: 5px;
+    font-weight:bold;
+    font-size:  20px ;
+    border-radius: 5px;
+
+
+    
+
+}
+
+
+
+
+
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.email-si input:hover{
+  
+   
+    border: 1px solid  rgb(202, 30, 30); 
+}
+/* movies */
+.space{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color:white;
+    font-family: sans-serif;
+
+}
+
+
+.movies{
+    display: flex;
+    width: 499%;
+    overflow-x: scroll;
+    }
+.movies img {
+    max-height: 200px;
+    width: 2000px;
+    margin:20px;
+    padding: 5px;
+    cursor: pointer;
+    border: 0;
+    outline:0;
+    border-radius:20px ; 
+}
+.movies::-webkit-scrollbar{
+    display: none;
+
+}
+
+.movies :hover{
+    transform: scale(1.1);
+}
+.Trendingbutton select{
+    background-color: transparent;
+    border: 1px solid white;
+    outline:0;
+    color: #fff;
+    font-size: 15px;
+    
+
+    cursor: pointer;
+    padding: 7px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+  
+
+}
+.Trendingbutton option{
+    color:#000;
+}
+.row{
+    color:white;
+   display:flex;
+   flex-direction: row;
+   gap:20px;
+   
+   
+}
+.content1{
+    
+    background-color:  #16112f; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#16112f, rgba(224, 18, 90,0.2));
+    flex: 1;
+    height: 300px;
+    border-radius:10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top: 20px;
+    
+   
+}
+/*dropdown*/
+.accordian{
+    margin: 60px auto;
+    width:100%;
+    max-width: 1500px;
+   position: relative;
+   float:right;
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+   
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #303030;
+    height: 60px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .cont{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+     transition:  max-height 0.5s,padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label+ .cont{
+    max-height: 600px;
+    padding: 30px 20px;
+ 
+}
+.accordian input[type="radio"]:checked + label::after{
+transform: rotate(135deg);
+}
+.email-la input{
+    flex:1;
+    border:1px solid rgb(119, 107, 107);
+    outline:0;   
+    margin-left: 20px;
+    width:500px;
+    background-color: transparent;
+    height: 45px;
+    position:relative;
+    right:10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: #fff;
+  
+
+}
+.email-la button{
+    flex:1;
+    background-color: red;
+    border: 0;
+    outline:0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    position: relative;
+    right: 5px;
+    width: 250px;
+    font-weight:bold;
+    font-size:  20px ;
+    border-radius: 5px;
+    
+
+}
+.lastemail{
+    text-align: center;
+}
+/*---footer-----------------*/
+.footer{
+padding: 50px 15% 10px;
+
+}
+
+.footer .col{
+   
+    flex-basis:  25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+   
+}
+.footer .col a{
+    display: block;
+    
+    color:#777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.row1{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 20px ;
+    justify-content: space-around;
+}
+.drop-la{
+    position: relative;
+    float:left;
+    
+}
+.drop-la select{
+    background-color: transparent;
+    border: 1px solid white;
+    outline:0;
+    color: #fff;
+    font-size: 15px;
+ 
+
+    cursor: pointer;
+    padding: 7px 20px;
+  
+    border-radius: 5px;
+   
+
+}
+.drop-la option{
+    color:#000;
+}
+/*-----------scroll--------*/
+.gallerywrap
+{
+display:flex;
+align-items: center;
+justify-content: center;
+margin:  10px auto;
+
+
+}
+#backbtn, #nextbtn{
+    cursor: pointer;
+  background-color: #fff;
+
+}
